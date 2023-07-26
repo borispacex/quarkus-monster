@@ -1,0 +1,16 @@
+1. Docker con postgres
+user: postgres
+pass: postgres
+
+2. Crear contenedor en postgresql
+docker run -d --rm --name postgres-db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres:10.5
+
+3. Abrir consola
+docker exec -it postgres-db bash
+psql -U postgres
+
+4. Creamos la base de datos
+CREATE DATABASE monsterdb;
+
+5. Ejecutar
+mvn compile quarkus:dev

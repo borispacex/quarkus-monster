@@ -1,0 +1,16 @@
+INGRESAR A LA MAQUINA VIRTUAL
+ssh admin@192.168.56.135
+
+LISTAR IMAGENES 
+podman images
+
+ELIMINAR UN CONTENEDOR
+podman rm monster-db
+
+PODMAN con postgres
+user: monster
+pass: password
+
+EJECUTAR CONTENEDOR
+podman run --name monster-db e POSTGRES_DB=monsterdb -e POSTGRES_USER=monster -e POSTGRES_PASSWORD=password -p 5432:5432 postgres:10.5
+
