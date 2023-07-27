@@ -1,0 +1,16 @@
+///////////////////////////////////////////////////////////////////////////////////////
+CLASE 3
+-> health/live
+test: 3,
+UP: 2,
+DOWN: 1
+result: DOWN
+
+-> health/ready
+test: 5,
+UP: 5,
+DOWN: 0
+result: UP
+
+
+mvnw quarkus:add-extension -Dextension="quarkus-smallrye-health"
