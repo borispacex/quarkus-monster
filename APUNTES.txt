@@ -13,4 +13,8 @@ DOWN: 0
 result: UP
 
 
-mvnw quarkus:add-extension -Dextension="quarkus-smallrye-health"
+mvn quarkus:add-extension -Dextension="quarkus-smallrye-health"
+
+////////////////////////////////////////////////////////////////////////////////////////
+CLASE 4
+mvn quarkus:add-extension -Dextension="quarkus-hibernate-orm-panache"
